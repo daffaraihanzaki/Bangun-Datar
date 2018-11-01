@@ -17,39 +17,39 @@
         </div>
         <script>
             function persegi_(){
-			    var sisi = prompt("Masukkan sisi:");
+			    var sisi = prompt("Masukkan sisi");
 			if (sisi == "" || sisi == null) {
-					alert("Anda belum memasukkan sisi")
-				}
+				alert("Anda belum memasukkan sisi")
+			}
 			else {
 				var luas = sisi * sisi;
                 var keliling = 4*sisi;
-				    alert("LUAS PERSEGI "+ luas + "  KELILING PERSEGI  " + keliling);
+				alert("LUAS PERSEGI "+ luas + "  KELILING PERSEGI  " + keliling);
 			}
             
 			if(confirm("Hitung lagi?")) {
 				var sisi = prompt("Masukkan sisi:");
 				if (sisi == "" || sisi == null) {
-					alert("Anda belum memasukkan sisi")
-				}
-				else {
-					var luas = sisi * sisi;
-					alert(luas);
-				}	
+				alert("Anda belum memasukkan sisi")
+			}
+			else {
+				var luas = sisi * sisi;
+				alert(luas);
+			}	
 			}
 			else {
 				alert("Terima Kasih")
 			}
 
             };
-
+			//====================================================================
             function persegi_panjang() {
-			var panjang = prompt("Masukkan panjang:");
-			var lebar = prompt("Masukkan lebar:");
+				var panjang = prompt("Masukkan panjang:");
+				var lebar = prompt("Masukkan lebar:");
 
 			if (panjang == "" || panjang == null || lebar == "" || lebar == null) {
-					alert("Anda belum memasukkan panjang atau lebar")
-				}
+				alert("Anda belum memasukkan panjang atau lebar")
+			}
 			else {
 				var luas = panjang * lebar;
                 var keliling = 2 * (panjang+lebar);
@@ -60,24 +60,25 @@
 				var panjang = prompt("Masukkan panjang:");
 				var lebar = prompt("Masukkan lebar:");
 				if (panjang == "" || panjang == null || lebar == "" || lebar == null) {
-					alert("Anda belum memasukkan panjang atau lebar")
-				}
-				else {
-					var luas = panjang * lebar;
-					alert(luas);
-				}	
+				alert("Anda belum memasukkan panjang atau lebar")
+			}
+			else {
+				var luas = panjang * lebar;
+				alert(luas);
+			}	
 			}
 			else {
 				alert("Terima Kasih")
 			}
 		
-		};
+			};
             function segitiga() {
-			var alas = prompt("Masukkan alas:");
-			var tinggi = prompt("Masukkan tinggi:");
+			//====================================================================
+				var alas = prompt("Masukkan alas:");
+				var tinggi = prompt("Masukkan tinggi:");
 			if (alas == "" || alas == null || tinggi == "" || tinggi == null) {
-					alert("Anda belum memasukkan alas atau tinggi")
-				}
+				alert("Anda belum memasukkan alas atau tinggi")
+			}
 			else {
 				var luas = alas * tinggi / 2;
 				alert( "LUAS SEGITIGA " + luas);
@@ -85,26 +86,26 @@
 			if(confirm("Hitung lagi?")) {
 				var alas = prompt("Masukkan alas:");
 				var tinggi = prompt("Masukkan tinggi:");
-				if (alas == "" || alas == null || tinggi == "" || tinggi == null) {
-						alert("Anda belum memasukkan alas atau tinggi")
-					}
-				else {
-					var luas = alas * tinggi / 2;
-					alert(luas);
-				}	
+			if (alas == "" || alas == null || tinggi == "" || tinggi == null) {
+				alert("Anda belum memasukkan alas atau tinggi")
+			}
+			else {
+				var luas = alas * tinggi / 2;
+				alert(luas);
+			}	
 			}
 			else {
 				alert("Terima Kasih")
 			}
-		};
-
-        function trapesium() {
-			var a = prompt("Masukkan sisi a:");
-			var b =prompt("Masukkan sisi b:");
-			var tinggi = prompt("Masukkan tinggi:");
+			};
+		//====================================================================
+        	function trapesium() {
+				var a = prompt("Masukkan sisi a:");
+				var b =prompt("Masukkan sisi b:");
+				var tinggi = prompt("Masukkan tinggi:");
 			if (a == "" || a == null || b == "" || b == null || tinggi == "" || tinggi == null) {
-					alert("Anda belum memasukkan sisi a atau sisi b atau tinggi")
-				}
+				alert("Anda belum memasukkan sisi a atau sisi b atau tinggi")
+			}
 			else {
 				var luas = 0.5 * (a+b) * tinggi;
 				alert("LUAS TRAPESIUM "+luas);
@@ -113,44 +114,45 @@
 				var a = prompt("Masukkan sisi a:");
 				var b =prompt("Masukkan sisi b:");
 				var tinggi = prompt("Masukkan tinggi:");
-				if (a == "" || a == null || b == "" || b == null || tinggi == "" || tinggi == null) {
-						alert("Anda belum memasukkan sisi a, sisi b atau tinggi")
-					}
-				else {
-					var luas = 0.5 * ((a*1)+(b*1)) * tinggi;
-					alert("LUAS TRAPESIUM "+luas);
-				}
+			if (a == "" || a == null || b == "" || b == null || tinggi == "" || tinggi == null) {
+				alert("Anda belum memasukkan sisi a, sisi b atau tinggi")
+			}
+			else {
+				var luas = 0.5 * ((a*1)+(b*1)) * tinggi;
+				alert("LUAS TRAPESIUM "+luas);
+			}
 			}
 			else {
 				alert("Terima Kasih")
 			}
-		};  
+			};  
+		//====================================================================	
 		function layang(){
 			var a = prompt("masukkan d1");
 			var b = prompt("masukkan d2");
-			if(a=="" | a==null | b=="" | b==null  ){
-				alert("anda belum memasukkan diagonal")
-				}
-			else{
-				var luas = a*b/2;
-				alert("LUAS LAYANG LAYANG "+luas);
-			}
-			if(confirm("hitung lagi?")){
-				var a=prompt("masukan d1");
-				var b=prompt("masukan d2")
-				if(a==""|a==null|b==""|b==null){
-					alert("anda belum memasukkan diagonal");
-				}else{
-					var luas=a*b/2;
-					alert("LUAS LAYANG LAYANG "+ luas);
-				}
-			}
-			else{
-				alert("Terima kasih")
-			}
+		if(a=="" | a==null | b=="" | b==null  ){
+			alert("anda belum memasukkan diagonal")
+		}
+		else{
+			var luas = a*b/2;
+			alert("LUAS LAYANG LAYANG "+luas);
+		}
+		if(confirm("hitung lagi?")){
+			var a=prompt("masukan d1");
+			var b=prompt("masukan d2")
+		if(a==""|a==null|b==""|b==null){
+			alert("anda belum memasukkan diagonal");
+		}
+		else{
+			var luas=a*b/2;
+			alert("LUAS LAYANG LAYANG "+ luas);
+		}
+		}
+		else{
+			alert("Terima kasih")
+		}
 		};
-            
-        </script>
-            
+        //====================================================================    
+        </script>            
 </body>
 </html>
